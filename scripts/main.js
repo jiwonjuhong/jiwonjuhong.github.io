@@ -77,3 +77,8 @@ $("a.smooth-scroll").click(function (event) {
         }
     }
 });
+
+<script type="text/javascript">
+    var mapDiv = document.getElementById('naver-map');
+    var map = new naver.maps.Map(mapDiv);
+</script>
