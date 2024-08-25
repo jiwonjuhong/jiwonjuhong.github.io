@@ -28,9 +28,21 @@
 
 </header>
 
+
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px">
 
+    <!-- Story Section -->
+    <div class="w3-row w3-padding-32" id="story">
+      <h4 class="w3-center">결혼식 초대글</h4><br>
+      <div class="w3-col l6 w3-padding-large">
+        <h4 >Lorem ipsum dolor sit amet</h4>
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum</p><br>  
+      </div>
+    </div>
+  
+    <hr>
+    
   <!-- About Section -->
     <div class="w3-row w3-padding-16 w3-margin-top">
       <h4 class="w3-center">최지원 / 백주홍</h4>
@@ -62,17 +74,6 @@
 
   
   
-  <hr>
-  
-  <!-- Story Section -->
-  <div class="w3-row w3-padding-32" id="story">
-    <h4 class="w3-center">지속가능성과 결혼</h4><br>
-    <div class="w3-col l6 w3-padding-large">
-      <h4 >Lorem ipsum dolor sit amet</h4>
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum</p><br>  
-    </div>
-  </div>
-
   <hr>
 
   <!-- Timeline Section -->
@@ -119,13 +120,44 @@
 
   <hr>
 
+  <!-- About Us Section -->
+  <div class="w3-row w3-padding-16 w3-margin-top">
+    <h4 class="w3-center">우리에 대한 소개</h4>
+  </div>
+
+  <div class="w3-row w3-padding-16">
+    <div class="w3-col m3 s5 w3-padding-large">
+    <img src="images/jiwon.png" class="w3-round w3-image w3-opacity-min" alt="jiwon" width="400" height="400">
+    </div>
+
+    <div class="w3-col m9 s7 w3-padding-large">
+      <p class="w3-medium">같이 자주 하는 것</p>
+      <!-- <h5 class="w3-center">Tradition since 1889</h5> 
+      <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      -->
+    </div>
+  </div>
+<hr>
+
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-64" id="contact">
+  <div class="w3-container w3-padding-16" id="contact">
     <div>
       <h4 class="w3-center">오시는 길</h4><br>
       <h6 class="w3-center">용산가족공원 야외예식장</h6>
       <p class="w3-center w3-text-grey">서울 용산구 서빙고로 185</p>
     </div>
+    <div id="map" style="width:100%;height:400px;"></div>
+
+    <script>
+    var mapOptions = {
+        center: new naver.maps.LatLng(37.3595704, 127.105399),
+        zoom: 10
+    };
+    
+    var map = new naver.maps.Map('map', mapOptions);
+    </script>
+    <br>
     <div class="w3-row">
       <div class="w3-col l4 m4 s4 w3-center">
         <a href="https://naver.me/GMWi3bMD">
@@ -145,16 +177,17 @@
     </div>
     
     <div class="w3-row">
-      <div id="map">
-      </div>
-      <script>
-        var mapOptions = {
-            center: new naver.maps.LatLng(37.3595704, 127.105399),
-            zoom: 10
-        };
-
-        var map = new naver.maps.Map('map', mapOptions);
-      </script>
+      
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Pay Section -->
+  <div class="w3-row w3-padding-32" id="pay">
+    <h4 class="w3-center">마음전하실 곳</h4><br>
+    <div class="w3-col l6 w3-padding-large">
+      <h4 >Lorem ipsum dolor sit amet</h4>
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum</p><br>  
     </div>
   </div>
   
