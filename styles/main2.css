@@ -3,6 +3,7 @@ body {font-family: "Noto Sans", sans-serif;}
 h1, h2, h3 {
   font-family: "Noto Sans", sans-serif;
   letter-spacing: 3px;
+  touch-action: pan-y;
 }
 
 * {
