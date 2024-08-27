@@ -1,6 +1,7 @@
 html{
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  touch-action: pan-y;
 }
 body {font-family: "Noto Sans", sans-serif;}
 h1, h2, h3 {
