@@ -166,18 +166,20 @@ h1, h2, h3 {
 }
 
 #tost_message {
-  opacity: 0;
+  width: 350px;
+  opacity: 100%;
   position: fixed;
   bottom: -100px;
   left: 50%;
   transform: translate(-50%,0);
-  padding: 10px 20px;
-  background: rgba(0, 0, 0, 0.70);
-  border-radius: 5px;
+  padding: 10px 50px;
+  background: rgb(130, 135, 141);
+  border-radius: 25px;
   color: #fff;
   /* box-shadow: 3px 4px 11px 0px #00000040; */
   transition: all 0.5s;
   font-family:'Noto Sans', sans-serif;
+  text-align: center;
 }
 /*토스트 메시지 활성화 되었을 때*/
 #tost_message.active {
