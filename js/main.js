@@ -5,7 +5,7 @@ function tostOn(){
 tostMessage.classList.add('active');
 setTimeout(function(){
     tostMessage.classList.remove('active');
-},2000);
+},2300);
 }
 
 let text = document.getElementById('myText').innerHTML;
