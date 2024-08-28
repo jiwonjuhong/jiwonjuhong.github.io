@@ -267,8 +267,21 @@
 <!-- End page content -->
 </div>
 
+<div id="tost_message">계좌번호를 복사했습니다.</div>
+
 <!-- Footer -->
 <footer></footer>
+
+<script>
+  let tostMessage = document.getElementById('tost_message');
+
+  function tostOn(){
+    tostMessage.classList.add('active');
+    setTimeout(function(){
+        tostMessage.classList.remove('active');
+    },2000);
+  }
+</script>
 
 <script>
   let text = document.getElementById('myText').innerHTML;
@@ -276,6 +289,7 @@
     try {
       await navigator.clipboard.writeText(text);
       console.log('Content copied to clipboard');
+      tostOn();
     } catch (err) {
       console.error('Failed to copy: ', err);
     }
@@ -311,5 +325,6 @@
     });
   }
 </script>
+
 </body>
 </html>
