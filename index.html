@@ -247,7 +247,9 @@
     <h4 class="w3-center">마음전하실 곳</h4><br>
     <div class="w3-col l6 w3-padding-large">
       <h4 >Lorem ipsum dolor sit amet</h4>
-      
+      <p id="myText">110-448-577810</p>
+      <button class="btn" onclick="copyContent()">Copy!</button>
+
       <a href="https://link.kakaopay.com/_/w55C06F">
         <img src="images/btn_send_tiny.png" alt="카카오페이 송금하기" />
       </a>
@@ -267,6 +269,19 @@
 
 <!-- Footer -->
 <footer></footer>
+
+<script>
+  let text = document.getElementById('myText').innerHTML;
+  const copyContent = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log('Content copied to clipboard');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
+</script>
+
 <script>
   function shareMessage() {
     Kakao.Share.sendDefault({
