@@ -187,7 +187,44 @@ h1, h2, h3 {
   line-height: 25px;
 }
 /*토스트 메시지 활성화 되었을 때*/
-#tost_message.active {
+#tost_message.activate {
   opacity: 100%;
   bottom: 50px;
+}
+
+/* collapsible content */
+.collapsible {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active,
+.collapsible:hover {
+  background-color: #ffffff;
+}
+
+.contents {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /* background-color: #efefef; */
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0px 1px 1px 1px ;
+}
+.collapsible:after {
+  content: '\002B';
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
 }

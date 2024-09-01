@@ -22,7 +22,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
 
 <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=fnc0ofrmlz"></script>
@@ -38,7 +40,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top" style="letter-spacing:4px; z-index:2;">
   <div class="w3-bar w3-white w3-padding-8 bottom-line" style="letter-spacing:4px;">
-      <h3 class="h2 text-center pb-3 ww-title" style="font-family: 'Noto Sans', sans-serif; text-align: center">JIWON & JUHONG</h3>
+      <h3 class="h2 text-center pb-3 ww-title" style="font-family: 'Marcellus', serif; text-align: center">JIWON & JUHONG</h3>
   </div>
 </div>
 
@@ -253,20 +255,47 @@
   <!-- Pay Section -->
   <div class="w3-row w3-padding-32" id="pay">
     <h4 class="w3-center">마음전하실 곳</h4><br>
-    <div class="w3-col l6 w3-padding-large">
-      <h4 >Lorem ipsum dolor sit amet</h4>
-      <p id="myText">110-448-577810</p>
 
-      <div class="text-right">
-        <button class="w3-button w3-white w3-border w3-round-large" onclick="copyContent()">계좌번호 복사</button>
-        <a href="https://link.kakaopay.com/_/w55C06F">
-          <img src="images/btn/btn_send_tiny.png" alt="카카오페이 송금하기" />
-        </a>
+    <div class="w3-col w3-padding-large">
+
+      <button type="button" class="collapsible content" onclick="collapse(this);">신랑측</button>      
+      <div class="contents">
+        <div class="text-center">
+          <div class="w3-col s4 text-left" >
+            <p>백주홍</p>
+          </div>
+          <div class="w3-col s8 text-right" >
+            <p>신한 <span id="myText">110-448-577810</span></p>
+          </div>
+          <button class="w3-button w3-white w3-border w3-round-xxlarge" onclick="copyContent()" style="font-family:'Noto Sans', sans-serif; font-size: 10pt;">계좌번호 복사</button>
+          <button class="w3-button w3-white w3-border w3-round-xxlarge" onclick="location.href='https://link.kakaopay.com/_/w55C06F'" style="font-family:'Noto Sans', sans-serif; font-size: 10pt;">카카오페이 송금</button>
+          <!-- <a href="https://link.kakaopay.com/_/w55C06F">
+            <img src="images/btn/btn_send_tiny.png" alt="카카오페이 송금하기"/>
+          </a> -->
+          <p></p>
+        </div>
       </div>
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum</p><br>  
-      <div class="text-center">
-        <button class="w3-button w3-white w3-border w3-round-large" onclick="shareMessage()">카카오톡 공유</button>
+      <p></p>
+      <button type="button" class="collapsible content" onclick="collapse(this);">신랑측</button>      
+      <div class="contents">
+        <div class="text-center">
+          <div class="w3-col s4 text-left" >
+            <p>백주홍</p>
+          </div>
+          <div class="w3-col s8 text-right" >
+            <p>신한 <span id="myText">110-448-577810</span></p>
+          </div>
+          <button class="w3-button w3-white w3-border w3-round-xxlarge" onclick="copyContent()" style="font-size: 10pt;">계좌번호 복사</button>
+          <a href="https://link.kakaopay.com/_/w55C06F">
+            <img src="images/btn/btn_send_tiny.png" alt="카카오페이 송금하기"/>
+          </a>
+          <p></p>
+        </div>
+      </div>  
+      <div class="text-center" style="margin-top: 20px;">
+        <button class="w3-button w3-white w3-border w3-round-xxlarge" onclick="shareMessage()">카카오톡 공유</button>
       </div>
+
     </div>
     
   </div>
