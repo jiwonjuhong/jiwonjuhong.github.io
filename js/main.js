@@ -20,6 +20,17 @@ try {
 }
 }
 
+const copyURL = async () => {
+    let txt = "https://jiwonjuhong.github.io/";
+    try {
+        await navigator.clipboard.writeText(txt);
+        console.log('Content copied to clipboard');
+        tostOn();
+    } catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+    }
+
 
 // kakaotalk sharing
 
