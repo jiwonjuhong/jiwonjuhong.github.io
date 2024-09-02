@@ -9,7 +9,6 @@ setTimeout(function(){
 }
 
 
-
 const copyContent = async (name) => {
 let text = document.getElementById(name).innerHTML;
 try {
