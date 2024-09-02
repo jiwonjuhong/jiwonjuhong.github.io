@@ -1,5 +1,6 @@
 // tostMessage
 let tostMessage = document.getElementById('tost_message');
+let tostMessageUrl = document.getElementById('tost_url');
 
 function tostOn(){
 tostMessage.classList.add('activate');
@@ -7,6 +8,13 @@ setTimeout(function(){
     tostMessage.classList.remove('activate');
 },2300);
 }
+
+function tostOnURL(){
+    tostMessageUrl.classList.add('activate');
+    setTimeout(function(){
+        tostMessageUrl.classList.remove('activate');
+    },2300);
+    }
 
 
 const copyContent = async (name) => {
@@ -25,7 +33,7 @@ const copyURL = async () => {
     try {
         await navigator.clipboard.writeText(txt);
         console.log('Content copied to clipboard');
-        tostOn();
+        tostOnURL();
     } catch (err) {
         console.error('Failed to copy: ', err);
     }
