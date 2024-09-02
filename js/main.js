@@ -8,8 +8,10 @@ setTimeout(function(){
 },2300);
 }
 
-let text = document.getElementById('myText').innerHTML;
-const copyContent = async () => {
+
+
+const copyContent = async (name) => {
+let text = document.getElementById(name).innerHTML;
 try {
     await navigator.clipboard.writeText(text);
     console.log('Content copied to clipboard');
